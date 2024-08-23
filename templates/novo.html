@@ -1,17 +1,6 @@
-<!DOCTYPE html>
-<html>
-  <head>
+ {% extends "template.html"%}
+ {% block conteudo %}   
 
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Jogoteca</title>
-    <link rel="stylesheet" href="../static/bootstrap.css">
-  </head>
-  <body>
-    <div class="container">
-      <div class="page-header">
-        <h1>{{ titulo }}</h1>
-      </div>
       <form action="/criar" method="post">
         <fieldset>
           <div class="form-group">
@@ -41,6 +30,5 @@
           </button>
         </fieldset>
       </form>
-    </div>
-  </body>
-</html>
+
+{% endblock %}
